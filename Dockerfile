@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11
+FROM openjdk:11
 EXPOSE 8081
 ADD target/checkpoint-cicd.jar checkpoint-cicd.jar
 ENTRYPOINT [ "java", "-jar", "checkpoint-cicd.jar"]
